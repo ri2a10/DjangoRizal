@@ -1,0 +1,46 @@
+{% extends 'front/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="wrapper">
+    <div class="profile-content section">
+      <div class="container">
+        <div class="row">
+          <div class="profile-picture">
+            <div class="fileinput fileinput-new" data-provides="fileinput">
+                <br><br>
+              <div class="fileinput-new img-no-padding">
+                <img src="{% static 'front/img/faces/galen-crout.jpg' %}" alt="...">
+              </div>
+              <div class="name">
+                <h4 class="title text-center">Chet Faker<br /><small>Music Producer</small></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <p> </p>
+            <br />
+        
+          </div>
+        </div>
+        <br />
+        <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#follows" role="tab">Follows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#following" role="tab">Following</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Tab panes -->
+      </div>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,15 @@
+version: '3'
+
+servive:
+    web:
+      build:
+      container_name: belajar_django_blog
+      # commad: python manage.py runserver 0.0.0.0:9008
+      commad : gunicorn mysite.wsgi:aplication --bind 0.0.0.0:9004
+      #commad : gunicorn uti.asgi.application --lifespan on -k uvicorn.wokers.Uvicornwoker --bind
+
+
+      volumes:
+          -.:/app
+      ports:
+          - "9004:9004"
